@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E6263C12E370962005DA024 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3E6263C02E370962005DA024 /* README.md */; };
 		3EF522A02E358E9B0043D1E9 /* FitnessShowcase Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 3EF5229F2E358E9B0043D1E9 /* FitnessShowcase Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3E6263C02E370962005DA024 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		3EF522922E358E990043D1E9 /* FitnessShowcase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitnessShowcase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EF5229F2E358E9B0043D1E9 /* FitnessShowcase Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FitnessShowcase Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -91,6 +93,7 @@
 		3EF522892E358E990043D1E9 = {
 			isa = PBXGroup;
 			children = (
+				3E6263C02E370962005DA024 /* README.md */,
 				3E6262FE2E36A9D7005DA024 /* Shared */,
 				3EF522942E358E990043D1E9 /* FitnessShowcase */,
 				3EF522A32E358E9B0043D1E9 /* FitnessShowcase Watch App */,
@@ -207,6 +210,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E6263C12E370962005DA024 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
