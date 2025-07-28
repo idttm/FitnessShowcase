@@ -39,7 +39,25 @@
 		3EF5229F2E358E9B0043D1E9 /* FitnessShowcase Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FitnessShowcase Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		3E6263022E36A9ED005DA024 /* Exceptions for "Shared" folder in "FitnessShowcase Watch App" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Models.swift,
+			);
+			target = 3EF5229E2E358E9B0043D1E9 /* FitnessShowcase Watch App */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		3E6262FE2E36A9D7005DA024 /* Shared */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				3E6263022E36A9ED005DA024 /* Exceptions for "Shared" folder in "FitnessShowcase Watch App" target */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		3EF522942E358E990043D1E9 /* FitnessShowcase */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = FitnessShowcase;
@@ -73,6 +91,7 @@
 		3EF522892E358E990043D1E9 = {
 			isa = PBXGroup;
 			children = (
+				3E6262FE2E36A9D7005DA024 /* Shared */,
 				3EF522942E358E990043D1E9 /* FitnessShowcase */,
 				3EF522A32E358E9B0043D1E9 /* FitnessShowcase Watch App */,
 				3EF522932E358E990043D1E9 /* Products */,
@@ -106,6 +125,7 @@
 				3EF522A22E358E9B0043D1E9 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
+				3E6262FE2E36A9D7005DA024 /* Shared */,
 				3EF522942E358E990043D1E9 /* FitnessShowcase */,
 			);
 			name = FitnessShowcase;
@@ -337,11 +357,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "FitnessShowcase Watch App/FitnessShowcase Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X6RLZ99668;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "FitnessShowcase-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = FitnessShowcase;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "We read your heart rate and workout data to show live metrics and training summaries.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "We save your workouts (time, heart rate, and route) to Apple Health so you can keep all training in one place.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We use your location to record workout routes and distance.";
+				INFOPLIST_KEY_NSMotionUsageDescription = "We use motion data to show cadence and pace.";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "andrew79911997-gmail.com.FitnessShowcase";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -360,7 +387,7 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 26.0;
+				WATCHOS_DEPLOYMENT_TARGET = 11.5;
 			};
 			name = Debug;
 		};
@@ -369,11 +396,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "FitnessShowcase Watch App/FitnessShowcase Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X6RLZ99668;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "FitnessShowcase-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = FitnessShowcase;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "We read your heart rate and workout data to show live metrics and training summaries.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "We save your workouts (time, heart rate, and route) to Apple Health so you can keep all training in one place.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We use your location to record workout routes and distance.";
+				INFOPLIST_KEY_NSMotionUsageDescription = "We use motion data to show cadence and pace.";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "andrew79911997-gmail.com.FitnessShowcase";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -393,7 +427,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 26.0;
+				WATCHOS_DEPLOYMENT_TARGET = 11.5;
 			};
 			name = Release;
 		};
@@ -402,17 +436,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FitnessShowcase/FitnessShowcase.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X6RLZ99668;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = FitnessShowcase;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "We read your heart rate and workout data to show live metrics and training summaries.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "We save your workouts (time, heart rate, and route) to Apple Health so you can keep all training in one place.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -436,17 +474,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FitnessShowcase/FitnessShowcase.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X6RLZ99668;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = FitnessShowcase;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "We read your heart rate and workout data to show live metrics and training summaries.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "We save your workouts (time, heart rate, and route) to Apple Health so you can keep all training in one place.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

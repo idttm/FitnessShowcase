@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct FitnessShowcaseApp: App {
+    @StateObject private var liveVM = LiveStreamViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            IOSDashboardView()
+                .environmentObject(liveVM)
         }
     }
 }

@@ -6,12 +6,31 @@
 //
 
 import SwiftUI
+import Combine
 
 @main
-struct FitnessShowcase_Watch_AppApp: App {
+struct FitnessShowcaseWatchApp: App {
+    @StateObject private var wc = WatchConnectivityManager.shared
+    private let vm = WorkoutViewModel(engine: makeEngine())
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RootView(vm: vm)
+                .environmentObject(wc)
+                .onAppear { wc.activate() }
         }
+    }
+}
+
+struct RootView: View {
+    @EnvironmentObject private var wc: WatchConnectivityManager
+    @ObservedObject var vm: WorkoutViewModel
+
+    var body: some View {
+        TabView {
+            WorkoutScreen(vm: vm, pendingPlan: wc.pendingPlan).tabItem { Text("Workout") }
+            HistoryScreen(vm: vm).tabItem { Text("History") }
+        }
+        .tabViewStyle(.carousel)
     }
 }
